@@ -1,0 +1,173 @@
+//
+	Plantilla Neutra de la Universidad de Granada
+	Copyright (C) 2014 Jaime Torres Benavente
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+html(xmlns="http://www.w3.org/1999/xhtml", lang="es", xml:lang="es")
+	head
+		title NOMBRE DEPARTAMENTO | Universidad de Granada
+		meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+		meta(name="description", content="Universidad de Granada - NOMBRE DEPARTAMENTO")
+		meta(name="keywords", content="universidad,granada,NOMBRE DEPARTAMENTO")
+		meta(http-equiv="content-language", name="language", content="es")
+		link(rel="shortcut icon", href="/img/favicon.ico", type="image/vnd.microsoft.icon")
+		link(rel="icon", href="/img/favicon.ico", type="image/vnd.microsoft.icon")
+		link(rel="stylesheet", id="css-style", type="text/css", href="css/style.css", media="all")
+
+	body
+		div(id="contenedor_margenes" class="")
+			div(id="contenedor" class="")
+				div(id="cabecera" class="")
+					h1#cab_inf NOMBRE DEPARTAMENTO
+					#formularios
+						a(href="http://www.ugr.es", id="enlace_ugr") Universidad de Granada
+						span.separador_enlaces |
+						div(class="depto ejemplo_titulo")
+							span.titulo_stack Departamento
+							a(href="index.html", id="enlace_stack") NOMBRE DEL DEPARTAMENTO
+						span.separador_enlaces | 
+
+				#rastro-idiomas
+					#rastro
+						ul#rastro_breadcrumb
+							li.first
+								a(class="first", href="index.html") Inicio
+
+							li.last
+								a(class="last" href="personal.html") Personal
+
+				#general
+					#menus
+						div(id="enlaces_secciones", class="mod-menu_secciones")
+							ul
+								li(class="tipo2 item-first_level")
+									a(href="index.html") Presentación
+								li(cclass="selected tipo2-selected item-first_level")
+									a(href="personal.html") Personal
+								li(class="tipo2 item-first_level")
+									a(href="contacto.html") Localización y Contacto
+								li(class="tipo2 item-first_level")
+									a(href="pruebas.html") Página de muestras
+
+						div(id="frecuentes", class="mod-menu_secciones menu_frecuentes", style="display: none;")
+							ul
+								li(class="adicional1 item-first_level")
+									a(href="#") Elemento 1er nivel
+									ul
+										li(class="tipo1 item-second_level")
+											a(href="#") Elemento 2º nivel
+
+					#pagina
+						h1#titulo_pagina
+							span.texto_titulo Personal
+
+						div(id="contenido", class="sec_interior")
+							.content_doku
+								table.inline
+									tbody
+										tr
+											th.centeralign Nombre
+											th.centeralign Telefono
+											th.centeralign E-mail
+
+										tr
+											td(class="centeralign par") Profesor prueba 1
+											td(class="centeralign impar") 958111111 
+											td(class="centeralign par")
+												a(href="mailto:1@prueba.com", class="mail JSnocheck", title="1@prueba.com") 1@prueba.com
+
+										tr
+											td(class="centeralign par") Profesor prueba 2
+											td(class="centeralign impar") 958111111 
+											td(class="centeralign par")
+												a(href="mailto:1@prueba.com", class="mail JSnocheck", title="1@prueba.com") 1@prueba.com
+
+										tr
+											td(class="centeralign par") Profesor prueba 3
+											td(class="centeralign impar") 958111111 
+											td(class="centeralign par")
+												a(href="mailto:1@prueba.com", class="mail JSnocheck", title="1@prueba.com") 1@prueba.com
+
+										tr
+											td(class="centeralign par") Profesor prueba 4
+											td(class="centeralign impar") 958111111 
+											td(class="centeralign par")
+												a(href="mailto:1@prueba.com", class="mail JSnocheck", title="1@prueba.com") 1@prueba.com
+
+										tr
+											td(class="centeralign par") Profesor prueba 5
+											td(class="centeralign impar") 958111111 
+											td(class="centeralign par")
+												a(href="mailto:1@prueba.com", class="mail JSnocheck", title="1@prueba.com") 1@prueba.com
+
+										tr
+											td(class="centeralign par") Profesor prueba 6
+											td(class="centeralign impar") 958111111 
+											td(class="centeralign par")
+												a(href="mailto:1@prueba.com", class="mail JSnocheck", title="1@prueba.com") 1@prueba.com
+
+										tr
+											td(class="centeralign par") Profesor prueba 7
+											td(class="centeralign impar") 958111111 
+											td(class="centeralign par")
+												a(href="mailto:1@prueba.com", class="mail JSnocheck", title="1@prueba.com") 1@prueba.com
+
+
+				#banners
+					.mod-banners
+						ul
+							li(class="banner_container model-resaltado-01 showtext")
+								a(class="banner", href="URL DONDE APUNTA EL BANNER")
+									strong LINEA 1 DE TEXTO
+									em LINEA 2 DE TEXTO
+									span LINEA 3 DE TEXTO
+
+							li(class="banner_container model-resaltado-01 dont_showtext")
+								a(class="banner", href="URL DONDE APUNTA EL BANNER")
+									strong LINEA 1 DE TEXTO
+									em LINEA 2 DE TEXTO
+									span LINEA 3 DE TEXTO
+
+							li(class="banner_container model-resaltado-02 showtext")
+								a(class="banner", href="/depto_bbm3i/pages/www.gmail.com")
+									strong linea 1
+									em linea 2
+									span linea 3
+
+							li(class="banner_container model-resaltado-02 dont_showtext")
+								a(class="banner", href="/depto_bbm3i/pages/www.gmail.com")
+									strong linea 1
+									em linea 2
+									span linea 3
+
+				#lateral_doku
+					div(class="content_doku content_doku_display")
+						.content_doku contenido en el margen
+
+				#interior_pie
+					#pie
+						a(class="cmswebmap", href="#") Mapa del sitio
+						span.separador_enlaces  | 
+						a(class="contactar", href="#") Contacto
+						span.separador_enlaces  | 
+						a(class="validador", href="#") Accesibilidad
+						span.separador_enlaces  | 
+						a(class="privacidad", href="#") Política de privacidad
+						p <a href="http://www.ugr.es/pages/creditos">&copy; 2011</a> <span class="separador_enlaces"> | </span> <a href="http://www.ugr.es">Universidad de Granada</a></p>
+
+

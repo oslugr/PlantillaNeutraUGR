@@ -1,3 +1,23 @@
+//
+	Plantilla Neutra de la Universidad de Granada
+	Copyright (C) 2014 Jaime Torres Benavente
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
 doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
 html(xmlns="http://www.w3.org/1999/xhtml", lang="es", xml:lang="es")
 	head
@@ -17,8 +37,8 @@ html(xmlns="http://www.w3.org/1999/xhtml", lang="es", xml:lang="es")
 					h1#cab_inf NOMBRE DEPARTAMENTO
 					#formularios
 						a(href="http://www.ugr.es", id="enlace_ugr") Universidad de Granada
-						span.separador_enlaces |
-						div(class="depto ejemplo_titulo")
+						span.separador_enlaces  | 
+						div(class="depto")
 							span.titulo_stack Departamento
 							a(href="index.html", id="enlace_stack") NOMBRE DEL DEPARTAMENTO
 						span.separador_enlaces | 
@@ -27,17 +47,19 @@ html(xmlns="http://www.w3.org/1999/xhtml", lang="es", xml:lang="es")
 					#rastro
 						ul#rastro_breadcrumb
 							li.first
-								a(class="first", href="index.html") Presentación
+								a(class="first", href="index.html") Inicio
+							li.last
+								a(class="last", href="contacto.html") Localización y Contacto
 
 				#general
 					#menus
 						div(id="enlaces_secciones", class="mod-menu_secciones")
 							ul
-								li(class="selected tipo2-selected item-first_level")
+								li(class="tipo2 item-first_level")
 									a(href="index.html") Presentación
 								li(class="tipo2 item-first_level")
 									a(href="personal.html") Personal
-								li(class="tipo2 item-first_level")
+								li(class="selected tipo2-selected item-first_level")
 									a(href="contacto.html") Localización y Contacto
 								li(class="tipo2 item-first_level")
 									a(href="pruebas.html") Página de muestras
@@ -52,21 +74,44 @@ html(xmlns="http://www.w3.org/1999/xhtml", lang="es", xml:lang="es")
 
 					#pagina
 						h1#titulo_pagina
-							span.texto_titulo Presentación
+							span.texto_titulo Localización y Contacto
 
 						div(id="contenido", class="sec_interior")
 							.content_doku
-								p
-									| <img width="200" alt="mapa_bbm3i" title="mapa_bbm3i" class="medialeft" src="imagenes/mapa.jpeg" />
-									| <a href="#">Lorem ipsum dolor sit amet</a>, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+								p En este mapa podrá encontra la localización del departamento.
+								
+								p.imagen_aislada 
+									img(src="img/interior/contacto/localizacion.jpeg", alt="Mapa localizacion departamento", title="Localizacion departamento")
+									a(href="http://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=av+madrid+GRanada&amp;sll=36.580247,0.175781&amp;sspn=8.059643,21.643066&amp;ie=UTF8&amp;ll=37.188374,-3.60446&amp;spn=0.010667,0.021136&amp;z=16", class="urlextern", title="http://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=av+madrid+GRanada&amp;sll=36.580247,0.175781&amp;sspn=8.059643,21.643066&amp;ie=UTF8&amp;ll=37.188374,-3.60446&amp;spn=0.010667,0.021136&amp;z=16", rel="nofollow") Ver el mapa de Google Maps
 
-								p
-									| <img width="200" alt="mapa_bbm3i" title="mapa_bbm3i" class="mediaright" src="imagenes/mapa.jpeg" />
-									| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+								ul
+									li.level1
+										.li
+											| <strong>Dirección</strong>
+											| : Departamento de XXXX. <br />
+											| Facultad de XXXXX. <br />
+											| (Avda./C., etc...) XXXXX nº X. <br />
+											| 18XXX GRANADA (Spain)
 
-								p
-									| <img width="200" alt="mapa_bbm3i" title="mapa_bbm3i" class="mediacenter" src="imagenes/mapa.jpeg" />
-									| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+								p También puedes contactar con nosotros por: 
+
+								ul
+									li.level1
+										.li
+											| <strong>Telefono</strong>
+											| :+34 958 111111
+
+									li.level1
+										.li
+											| <strong>Fax</strong>
+											| : +34 958 222222
+
+									li.level1
+										.li
+											| <strong>E-Mail</strong>
+											| :<a href="mailto:xxx@ugr.es" class="mail JSnocheck" title="xxx@ugr.es">xxx@ugr.es</a>
+
+
 
 				#banners
 					.mod-banners
@@ -77,13 +122,19 @@ html(xmlns="http://www.w3.org/1999/xhtml", lang="es", xml:lang="es")
 									em LINEA 2 DE TEXTO
 									span LINEA 3 DE TEXTO
 
-							li(class="banner_container model-resaltado-01 showtext")
+							li(class="banner_container model-resaltado-01 dont_showtext")
 								a(class="banner", href="URL DONDE APUNTA EL BANNER")
 									strong LINEA 1 DE TEXTO
 									em LINEA 2 DE TEXTO
 									span LINEA 3 DE TEXTO
 
 							li(class="banner_container model-resaltado-02 showtext")
+								a(class="banner", href="/depto_bbm3i/pages/www.gmail.com")
+									strong linea 1
+									em linea 2
+									span linea 3
+
+							li(class="banner_container model-resaltado-02 dont_showtext")
 								a(class="banner", href="/depto_bbm3i/pages/www.gmail.com")
 									strong linea 1
 									em linea 2
@@ -103,5 +154,3 @@ html(xmlns="http://www.w3.org/1999/xhtml", lang="es", xml:lang="es")
 						span.separador_enlaces  | 
 						a(class="privacidad", href="#") Política de privacidad
 						p <a href="http://www.ugr.es/pages/creditos">&copy; 2011</a> <span class="separador_enlaces"> | </span> <a href="http://www.ugr.es">Universidad de Granada</a></p>
-
-
